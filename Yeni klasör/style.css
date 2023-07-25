@@ -1,0 +1,490 @@
+#app{
+    background-color: black;
+    height:auto;
+    padding-bottom:60px;
+    background-image: url('/backgroundimage.jpg');
+    padding-bottom:500px;
+    
+}
+@media screen and (max-width<=768) {
+    
+}
+#navbar{
+    height:auto;
+    width:auto;
+    border-radius: 50%;
+
+}
+.logo{
+    margin-left:-800px;
+    animation-name:login-logos;
+    animation-duration:2s;
+    margin-left:0px;
+}
+.button{
+    border-width: 0px;
+    background-color: transparent;
+    animation-name:login-utilities;
+    animation-duration:2s;
+    font-size:22px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+::-webkit-scrollbar{
+    display:none;
+}
+@keyframes boldentext{
+    0%{color:black;}
+    100%{color:yellow}
+}
+@keyframes login-logos{
+    0%{margin-left:-400px;opacity:0;}
+    100%{margin-left:0px;opacity:1;}
+}
+@keyframes login-utilities{
+    0%{margin-right:-1000px;opacity:0;}
+    100%{margin-right:0px;opacity:1;}
+
+
+}
+
+.circle{
+    height:50px;
+    width:50px;
+    background-color: #555;
+    border-radius:50%;
+}
+
+#github-logo{
+    margin-left:180px;
+}
+@media screen and (max-width:1000px){
+    #github-logo{
+        margin-left:0px;
+    }
+    #btn1{
+        margin-left:-100px;
+    }
+    #btn2{
+        margin-left:-30px;
+    }
+    #btn3{
+        margin-left:-5px;
+    }
+    #btn4{
+        margin-left:30px;
+    }
+}
+@media screen and (max-width:800px){
+    .about-me-exp{
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+ 
+
+.page-document{
+    background-color:blue;
+    height:auto;
+    width:auto;
+    display:flex;
+    text-align: center;
+    align-items: center;
+}
+.about-me-photo{
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-me-exp{
+    color:white;
+    max-width: 800px;
+    font-size:20px;
+    padding-top:30px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.photo-me{
+    width:400px;
+    height:500px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+@media screen and (max-width:768px) {
+    #navbar{
+        opacity:1;
+    }
+}
+/* .skills{
+    display:flex;
+    background-color: transparent;
+    height:auto;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+} */
+#skills-container{
+    margin-top:100px;
+}
+.skills-left-logos{
+    animation-name:skills-left-login;
+    animation-duration:2s;
+}
+.about-me{
+    opacity:0;
+}
+.about-me-slideIn{
+    transition:opacity 2s ease-in;
+    opacity:1;
+}
+.about-me-slideOut{
+    transition:opacity 2s ease-out;
+    opacity:0;
+}
+@keyframes skills-left-login {
+    0%{margin-left:400px;opacity:0;}
+    100%{margin-left:0px;opacity:1;}   
+}
+@keyframes skills-right-login {
+    0%{margin-right:400px;opacity:0;}
+    100%{margin-right:0px;opacity:1;}
+}
+@keyframes skills-out{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+@media screen and (max-width:768px) {
+    #skill-grid-first-row{
+        opacity:1;
+    }
+    #skill-grid-second-row{
+        opacity:1;
+    }
+    #skill-grid-third-row{
+        opacity:1;
+    }
+    #skill-grid-fourth-row{
+        opacity:1;
+    }
+}
+.skill-logo{
+    width:75px;
+    height:75px;
+    margin-top:40px;
+}
+
+.skill-logo:hover{
+    color:black;
+    opacity:0.7;
+}
+
+#skill-grid-first-row{
+    opacity:0;
+}
+#skill-grid-second-row{
+    opacity:0;
+}
+#skill-grid-third-row{
+    opacity:0;
+}
+#skill-grid-fourth-row{
+    opacity:0;
+}
+#skill-grid-fifth-row{
+    opacity:0;
+}
+#contact-me{
+    margin:auto;
+    height:600px;
+    width:1000px;
+}
+#email-logo{
+    width: 100px; /* Set initial width */
+  height: 35px; /* Set initial height */
+ /* For visibility, add your desired styles */
+  animation-name: bouncing-mail; /* Apply the defined keyframes */
+  animation-duration: 3s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out; /* Add easing for smooth animation */
+  animation-iteration-count: infinite; /* Infinite loop for the bouncing effect */
+  align-items: start;
+  margin:auto;
+  text-align: start;
+  justify-content: start;
+
+}
+#contact-me-text{
+    align-self: center;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    color:white;
+}
+
+@keyframes bouncing-mail {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-30px);} 
+   60% {transform: translateY(-15px);} 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* Here we are making roundabout balls  */
+.star {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 2px;
+    border-radius: 885px;
+    background: linear-gradient(-45deg,
+            #eef0f5, rgba(0, 0, 255, 0));
+ 
+    -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+    filter: drop-shadow(0 0 6px #d7dff0);
+    -webkit-animation: tail 3000ms ease-in-out infinite,
+        shooting 3000ms ease-in-out infinite;
+    animation: tail 3000ms ease-in-out infinite,
+        shooting 3000ms ease-in-out infinite;
+}
+ 
+/* Here we add before and after effect to star */
+.star::before,
+.star::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    height: 2px;
+    background: linear-gradient(-45deg,
+            rgba(0, 0, 255, 0),
+            #eaeef8,
+            rgba(0, 0, 255, 0));
+    -webkit-transform: translateX(50%) rotateZ(45deg);
+    transform: translateX(50%) rotateZ(45deg);
+    border-radius: 100%;
+    -webkit-animation: shining 3000ms ease-in-out infinite;
+    animation: shining 3000ms ease-in-out infinite;
+}
+ 
+.star::after {
+    -webkit-transform: translateX(50%) rotateZ(-45deg);
+    transform: translateX(50%) rotateZ(-45deg);
+}
+ 
+/* Here we are adding location of each
+     nth-child, animations, delays, and
+     before and after effects to each
+     and every balls(stars) */
+.star:nth-child(1) {
+    top: calc(50% - -119px);
+    left: calc(50% - 43px);
+    -webkit-animation-delay: 4000ms;
+    animation-delay: 4000ms;
+}
+ 
+.star:nth-child(1)::before,
+.star:nth-child(1)::after {
+    -webkit-animation-delay: 4000ms;
+    animation-delay: 4000ms;
+}
+ 
+.star:nth-child(2) {
+    top: calc(50% - -43px);
+    left: calc(50% - 37px);
+    -webkit-animation-delay: 5000ms;
+    animation-delay: 5000ms;
+}
+ 
+.star:nth-child(2)::before,
+.star:nth-child(2)::after {
+    -webkit-animation-delay: 5000ms;
+    animation-delay: 5000ms;
+}
+ 
+.star:nth-child(3) {
+    top: calc(50% - -40px);
+    left: calc(50% - 222px);
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(3)::before,
+.star:nth-child(3)::after {
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(4) {
+    top: calc(50% - -29px);
+    left: calc(50% - 113px);
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(4)::before,
+.star:nth-child(4)::after {
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(5) {
+    top: calc(50% - 146px);
+    left: calc(50% - 112px);
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(5)::before,
+.star:nth-child(5)::after {
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(6) {
+    top: calc(50% - -108px);
+    left: calc(50% - 160px);
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(6)::before,
+.star:nth-child(6)::after {
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(7) {
+    top: calc(50% - 52px);
+    left: calc(50% - 72px);
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(7)::before,
+.star:nth-child(7)::after {
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+/* This code will help to generate
+  effect in tail of star */
+@keyframes tail {
+    0% {
+        width: 0;
+    }
+ 
+    30% {
+        width: 100px;
+    }
+ 
+    100% {
+        width: 0;
+    }
+}
+ 
+/* This code will generate shining
+  effect in head of star */
+@keyframes shining {
+    0% {
+        width: 0;
+    }
+ 
+    50% {
+        width: 30px;
+    }
+ 
+    100% {
+        width: 0;
+    }
+}
+ 
+/* Here we are adding webkit-animation
+  to head of star for shining */
+@-webkit-keyframes shining {
+    0% {
+        width: 0;
+    }
+ 
+    50% {
+        width: 30px;
+    }
+ 
+    100% {
+        width: 0;
+    }
+}
+ 
+/* Here we are adding webkit-animation
+  to tail of star */
+@-webkit-keyframes tail {
+    0% {
+        width: 0;
+    }
+ 
+    30% {
+        width: 100px;
+    }
+ 
+    100% {
+        width: 0;
+    }
+}
+ 
+/* Here we are adding webkit-animation
+  for shooting effect */
+@-webkit-keyframes shooting {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+ 
+    100% {
+        -webkit-transform: translateX(270px);
+        transform: translateX(270px);
+    }
+}
+ 
+/* Here we make shooting effect */
+@keyframes shooting {
+    0% {
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+ 
+    100% {
+        -webkit-transform: translateX(700px);
+        transform: translateX(700px);
+    }
+}
