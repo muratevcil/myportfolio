@@ -7,25 +7,53 @@ function skillAnimationAdder(skillGrid,animationName,duration=5,animationFillMod
 
 }
 
+
+function aboutMeSlide(){
+    if(window.innerWidth>=768){
+        window.scrollTo(0,200);
+    }
+    else{
+        window.scrollTo(0,300);
+    }
+}
+function skillsSlide(){
+    if(window.innerWidth>=768){
+    window.scrollTo(0,1100);
+    }
+    else{
+        window.scrollTo(0,1400);
+    }
+}
+function contactSlide(){
+    if(window.innerWidth>=768)
+    {window.scrollTo(0,2000);}
+    else{
+        window.scrollTo(0,3450);
+    }
+}
+function goTopSlide(){
+    window.scrollTo(0,0);
+}
+
 const observer = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
-        if(window.innerWidth<=768){
-            entry.target.classList.add('skill-grid-first-row');
-                entry.target.classList.add('skill-grid-second-row');
-                entry.target.classList.add('skill-grid-third-row');
-                entry.target.classList.add('skill-grid-fourth-row');
-                entry.target.classList.add('skill-grid-fifth-row');
-                skillGridFirst = document.getElementById(`${entry.target.classList[1]}`);
-                skillGridSecond = document.getElementById(`${entry.target.classList[2]}`);
-                skillGridThird = document.getElementById(`${entry.target.classList[3]}`);
-                skillGridFourth = document.getElementById(`${entry.target.classList[4]}`);
-                skillGridFifth = document.getElementById(`${entry.target.classList[5]}`);
-                skillAnimationAdder(skillGridFirst,'skills-left-login');
-                skillAnimationAdder(skillGridSecond,'skills-right-login');
-                skillAnimationAdder(skillGridThird,'skills-left-login');
-                skillAnimationAdder(skillGridFourth,'skills-right-login');
-                skillAnimationAdder(skillGridFifth,'skills-left-login');
-        }
+        // if(window.innerWidth<=768){
+        //     entry.target.classList.add('skill-grid-first-row');
+        //         entry.target.classList.add('skill-grid-second-row');
+        //         entry.target.classList.add('skill-grid-third-row');
+        //         entry.target.classList.add('skill-grid-fourth-row');
+        //         entry.target.classList.add('skill-grid-fifth-row');
+        //         skillGridFirst = document.getElementById(`${entry.target.classList[1]}`);
+        //         skillGridSecond = document.getElementById(`${entry.target.classList[2]}`);
+        //         skillGridThird = document.getElementById(`${entry.target.classList[3]}`);
+        //         skillGridFourth = document.getElementById(`${entry.target.classList[4]}`);
+        //         skillGridFifth = document.getElementById(`${entry.target.classList[5]}`);
+        //         skillAnimationAdder(skillGridFirst,'skills-left-login');
+        //         skillAnimationAdder(skillGridSecond,'skills-right-login');
+        //         skillAnimationAdder(skillGridThird,'skills-left-login');
+        //         skillAnimationAdder(skillGridFourth,'skills-right-login');
+        //         skillAnimationAdder(skillGridFifth,'skills-left-login');
+        // }
         if(entry.isIntersecting){
             if(entry.target.classList[0] === "about-me"){
                 entry.target.classList.add('about-me-slideIn');
@@ -54,7 +82,7 @@ const observer = new IntersectionObserver(entries=>{
             entry.target.classList.remove('about-me-slideIn');
             entry.target.classList.add('about-me-slideOut');
             }
-            else if(entry.target.classList[0] === "skills"&& window.innerWidth>=768){
+            else if(entry.target.classList[0] === "skills"){
                 console.log('hello')
                 skillGridFirst = document.getElementById(`${entry.target.classList[1]}`);
                 skillGridSecond = document.getElementById(`${entry.target.classList[2]}`);

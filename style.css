@@ -2,11 +2,72 @@
     background-color: black;
     height:auto;
     padding-bottom:60px;
-    background-image: url('/backgroundimage.jpg');
+    background-image: url('backgroundimage.jpg');
     padding-bottom:500px;
+    width:auto;
     
 }
-@media screen and (max-width<=768) {
+.go-top-button{
+    margin:auto;
+    align-self:center;
+    text-align:center;
+    justify-self: center;
+    width:50px;
+    height:50px;
+    position:sticky;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:auto;
+    border-radius:30px;
+    background-color:rgb(100, 149, 237);
+
+}
+@media screen and (max-width:720px){
+    .skills{
+        display:flex;
+    }
+    h5{
+        margin-left:150px;
+        flex-wrap:nowrap;
+    }
+}
+@media screen and (max-width:600px){
+    .button{
+   }
+}
+
+
+
+.go-top{
+    width:25px;
+    height:25px;
+    background-image: url('up-long-solid.svg'); 
+    background-size: cover; /* Scale the background image to cover the entire button */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    border: none; /* Remove the default button border */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    align-self: center;
+    text-align: center;
+    margin:auto;
+}
+.go-top-button:hover{
+    animation-name:button-hover;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+.go-top-button:not(:hover){
+    animation-name: button-not-hover;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+@keyframes button-hover{
+    0%{background-color:rgb(100, 149, 237) ;}
+    100%{background-color: rgb(26, 103, 245);}
+}
+@keyframes button-not-hover {
+    0%{background-color: rgb(26, 103, 245);}
+    100%{background-color:rgb(100, 149, 237) ;}
     
 }
 #navbar{
@@ -48,6 +109,7 @@
 
 
 }
+
 
 .circle{
     height:50px;
@@ -205,8 +267,16 @@
     height:600px;
     width:1000px;
 }
+.button:focus,.button:active{
+    outline:none;
+    box-shadow:none;
+}
+.button-move:focus,.button-move:active{
+    outline:none;
+    box-shadow:none;
+}
 #email-logo{
-    width: 100px; /* Set initial width */
+  width: 100px; /* Set initial width */
   height: 35px; /* Set initial height */
  /* For visibility, add your desired styles */
   animation-name: bouncing-mail; /* Apply the defined keyframes */
@@ -234,33 +304,9 @@
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+.stars-container{
+    position:relative;
+}
 /* Here we are making roundabout balls  */
 .star {
     position: absolute;
@@ -308,7 +354,7 @@
      before and after effects to each
      and every balls(stars) */
 .star:nth-child(1) {
-    top: calc(50% - -119px);
+    top: calc(30% - -119px);
     left: calc(50% - 43px);
     -webkit-animation-delay: 4000ms;
     animation-delay: 4000ms;
@@ -321,8 +367,8 @@
 }
  
 .star:nth-child(2) {
-    top: calc(50% - -43px);
-    left: calc(50% - 37px);
+    top: calc(30% - -43px);
+    left: calc(30% - 37px);
     -webkit-animation-delay: 5000ms;
     animation-delay: 5000ms;
 }
@@ -334,8 +380,8 @@
 }
  
 .star:nth-child(3) {
-    top: calc(50% - -40px);
-    left: calc(50% - 222px);
+    top: calc(30% - -40px);
+    left: calc(30% - 222px);
     -webkit-animation-delay: 7000ms;
     animation-delay: 7000ms;
 }
@@ -347,8 +393,8 @@
 }
  
 .star:nth-child(4) {
-    top: calc(50% - -29px);
-    left: calc(50% - 113px);
+    top: calc(30% - -29px);
+    left: calc(30% - 113px);
     -webkit-animation-delay: 7000ms;
     animation-delay: 7000ms;
 }
@@ -360,8 +406,8 @@
 }
  
 .star:nth-child(5) {
-    top: calc(50% - 146px);
-    left: calc(50% - 112px);
+    top: calc(30% - 146px);
+    left: calc(30% - 112px);
     -webkit-animation-delay: 3000ms;
     animation-delay: 3000ms;
 }
@@ -373,8 +419,8 @@
 }
  
 .star:nth-child(6) {
-    top: calc(50% - -108px);
-    left: calc(50% - 160px);
+    top: calc(30% - -108px);
+    left: calc(30% - 160px);
     -webkit-animation-delay: 3000ms;
     animation-delay: 3000ms;
 }
@@ -386,8 +432,8 @@
 }
  
 .star:nth-child(7) {
-    top: calc(50% - 52px);
-    left: calc(50% - 72px);
+    top: calc(30% - 52px);
+    left: calc(30% - 72px);
     -webkit-animation-delay: 7000ms;
     animation-delay: 7000ms;
 }
@@ -396,6 +442,130 @@
 .star:nth-child(7)::after {
     -webkit-animation-delay: 7000ms;
     animation-delay: 7000ms;
+}
+@media screen and (max-width:1000px){
+    
+    .star{
+        left:0.0000005%;
+        top:20%;
+        display:none;
+    }
+    .star::before,
+    .star::after {
+    content: "";
+    position: absolute;
+    top: calc(20% - 1px);
+    right: 0;
+    height: 2px;
+    background: linear-gradient(-45deg,
+            rgba(0, 0, 255, 0),
+            #eaeef8,
+            rgba(0, 0, 255, 0));
+    -webkit-transform: translateX(1%) rotateZ(45deg);
+    transform: translateX(1%) rotateZ(45deg);
+    border-radius: 100%;
+    -webkit-animation: shining 3000ms ease-in-out infinite;
+    animation: shining 3000ms ease-in-out infinite;
+    }
+.star:nth-child(1) {
+    top: calc(0.2% - -19px);
+    left: calc(0.2% - 4px);
+    -webkit-animation-delay: 4000ms;
+    animation-delay: 4000ms;
+}
+ 
+.star:nth-child(1)::before,
+.star:nth-child(1)::after {
+    -webkit-animation-delay: 4000ms;
+    animation-delay: 4000ms;
+}
+ 
+.star:nth-child(2) {
+    top: calc(0.2% - -8px);
+    left: calc(0.2% - 7px);
+    -webkit-animation-delay: 5000ms;
+    animation-delay: 5000ms;
+}
+ 
+.star:nth-child(2)::before,
+.star:nth-child(2)::after {
+    -webkit-animation-delay: 5000ms;
+    animation-delay: 5000ms;
+}
+ 
+.star:nth-child(3) {
+    top: calc(0.2% - -8px);
+    left: calc(0.2% - 22px);
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(3)::before,
+.star:nth-child(3)::after {
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(4) {
+    top: calc(0.2% - -6px);
+    left: calc(0.2% - 22px);
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(4)::before,
+.star:nth-child(4)::after {
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(5) {
+    top: calc(0.2% - -29px);
+    left: calc(0.2% - 22px);
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(5)::before,
+.star:nth-child(5)::after {
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(6) {
+    top: calc(0.2% - -21px);
+    left: calc(0.2% - 32px);
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(6)::before,
+.star:nth-child(6)::after {
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+ 
+.star:nth-child(7) {
+    top: calc(0.2% - 10px);
+    left: calc(1% - 14px);
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+.star:nth-child(7)::before,
+.star:nth-child(7)::after {
+    -webkit-animation-delay: 7000ms;
+    animation-delay: 7000ms;
+}
+ 
+ 
+.star::after {
+    -webkit-transform: translateX(10%) rotateZ(-45deg);
+    transform: translateX(10%) rotateZ(-45deg);
+}
+    
+
+    
 }
  
 /* This code will help to generate
