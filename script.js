@@ -1,5 +1,5 @@
 const animation_elements = [document.querySelectorAll('.about-me'),document.querySelectorAll(".skills"),document.querySelectorAll("#navbar")];
-function skillAnimationAdder(skillGrid,animationName,duration=5,animationFillMode="forwards"){
+function skillAnimationAdder(skillGrid,animationName,duration=2,animationFillMode="forwards"){
     skillGrid.style.animationName = animationName;
     skillGrid.style.animationDuration = `${duration}s`;
     skillGrid.style.animationFillMode = animationFillMode;
