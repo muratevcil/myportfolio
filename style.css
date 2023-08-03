@@ -4,7 +4,7 @@
     padding-bottom:60px;
     background-image: url('backgroundimage.jpg');
     padding-bottom:500px;
-    width:calc(auto + 20px);
+    width:calc(auto + 50px);
     
 }
 .go-top-button{
@@ -31,8 +31,9 @@
         margin-left:125px;
         flex-wrap:nowrap;
     }
-}
-@media screen and (max-width:600px){
+    #app{
+        width:300px;
+    }
 }
 
 
