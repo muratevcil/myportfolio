@@ -132,13 +132,12 @@
     }
     #navbar-utis{
         margin-left:170px;
-        text-align: center;
     }
     #navbar-utis .button{
-        text-align: center;
+        margin-top:10px;
     }
     .about-me{
-        margin-top:150px;
+        margin-top:100px;
     }
 }
 @media screen and (max-width:800px){
