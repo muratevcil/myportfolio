@@ -132,9 +132,10 @@
     }
     #navbar-utis{
         margin-left:170px;
+        text-align: center;
     }
     #navbar-utis .button{
-        margin-top:10px;
+        text-align: center;
     }
     .about-me{
         margin-top:150px;
