@@ -4,7 +4,7 @@
     padding-bottom:60px;
     background-image: url('backgroundimage.jpg');
     padding-bottom:500px;
-    width:auto;
+    width:calc(auto + 20px);
     
 }
 .go-top-button{
@@ -28,13 +28,11 @@
         display:flex;
     }
     h5{
-        margin-left:150px;
+        margin-left:125px;
         flex-wrap:nowrap;
     }
 }
 @media screen and (max-width:600px){
-    .button{
-   }
 }
 
 
