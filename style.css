@@ -218,24 +218,23 @@
     0%{margin-right:400px;opacity:0;}
     100%{margin-right:0px;opacity:1;}
 }
+@media screen and (max-width:600px) {
+    @keyframes skills-left-login{
+        0%{margin-left:20px;opacity:0;}
+        100%{margin-left:0px;opacity:1;}
+    }
+    @keyframes skills-right-login{
+        0%{margin-left:20px;opacity:0;}
+        100%{margin-left:0px;opacity:1;}
+    }
+
+    
+}
 @keyframes skills-out{
     0%{opacity:1;}
     100%{opacity:0;}
 }
-@media screen and (max-width:768px) {
-    #skill-grid-first-row{
-        opacity:1;
-    }
-    #skill-grid-second-row{
-        opacity:1;
-    }
-    #skill-grid-third-row{
-        opacity:1;
-    }
-    #skill-grid-fourth-row{
-        opacity:1;
-    }
-}
+
 .skill-logo{
     width:75px;
     height:75px;
