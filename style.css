@@ -17,7 +17,6 @@
     position:sticky;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
     margin:auto;
     border-radius:30px;
     background-color:rgb(100, 149, 237);
@@ -268,7 +267,7 @@
     opacity:0;
 }
 #contact-me{
-    margin:auto;
+    /* margin:auto; */
     height:600px;
     width:1000px;
 }

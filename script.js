@@ -10,15 +10,15 @@ function skillAnimationAdder(skillGrid,animationName,duration=2,animationFillMod
 
 function aboutMeSlide(){
     if(window.innerWidth>=768){
-        window.scrollTo(0,200);
+        window.scrollTo(0,350);
     }
     else{
-        window.scrollTo(0,300);
+        window.scrollTo(0,360);
     }
 }
 function skillsSlide(){
     if(window.innerWidth>=768){
-    window.scrollTo(0,1100);
+    window.scrollTo(0,1350);
     }
     else{
         window.scrollTo(0,1400);
@@ -26,13 +26,22 @@ function skillsSlide(){
 }
 function contactSlide(){
     if(window.innerWidth>=768)
-    {window.scrollTo(0,2000);}
+    {window.scrollTo(0,3250);}
     else{
-        window.scrollTo(0,3450);
+        window.scrollTo(0,2000);
     }
 }
 function goTopSlide(){
     window.scrollTo(0,0);
+}
+
+function experienceSlide(){
+    if(window.innerWidth>=768){
+        window.scrollTo(0,2300)
+    }
+    else{
+        window.scrollTo(0,2000)
+    }
 }
 
 const observer = new IntersectionObserver(entries=>{
