@@ -4,7 +4,7 @@
     padding-bottom:60px;
     background-image: url('backgroundimage.jpg');
     padding-bottom:500px;
-    width:calc(auto + 50px);
+    width:auto;
     
 }
 .go-top-button{
@@ -30,10 +30,29 @@
         margin-left:125px;
         flex-wrap:nowrap;
     }
+    #experience{
+        width:50px;
+        height:50px;
+    }
+    .carousel-item img{
+        max-width:30%;
+        height:50%;
+    }
+    #app{
+        width:700px;
+    }
 
+    
+}
+.carousel-item img{
+    height:550px;
+    width:600px;
 }
 
-
+#experience{
+    width:600px;
+    height:500px;
+}
 
 
 .go-top{
@@ -47,11 +66,13 @@
     align-self: center;
     text-align: center;
     margin:auto;
+    z-index: 3;
 }
 .go-top-button:hover{
     animation-name:button-hover;
     animation-duration:1s;
     animation-fill-mode:forwards;
+    z-index: 4;
 }
 .go-top-button:not(:hover){
     animation-name: button-not-hover;
@@ -90,7 +111,13 @@
 
 }
 ::-webkit-scrollbar{
-    display:none;
+    background-color: rgb(40, 40, 90);
+}
+::-webkit-scrollbar-button{
+    background-color: blue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(60, 34, 119);
 }
 @keyframes boldentext{
     0%{color:black;}

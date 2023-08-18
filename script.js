@@ -7,7 +7,6 @@ function skillAnimationAdder(skillGrid,animationName,duration=2,animationFillMod
 
 }
 
-
 function aboutMeSlide(){
     if(window.innerWidth>=768){
         window.scrollTo(0,350);
@@ -106,7 +105,7 @@ const observer = new IntersectionObserver(entries=>{
             
         }
     })
-},{threshold:0.5});
+},{threshold:0.1});
 
 for(let i = 0; i<animation_elements.length;i++){
     const el = animation_elements[i][0];
